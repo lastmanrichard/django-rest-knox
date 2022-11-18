@@ -3,6 +3,10 @@
 Settings in Knox are handled in a similar way to the rest framework settings.
 All settings are namespaced in the `'REST_KNOX'` setting.
 
+The Knox settings must come below the 'REST_FRAMEWORK' settings in 
+'settings.py', if you're going to reference their 'api_settings'. If the 
+rest framework settings come below, they will not be applied.
+
 Example `settings.py`
 
 ```python
